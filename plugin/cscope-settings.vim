@@ -7,6 +7,8 @@ if has("cscope")
 	set cscopetag
 	" check symbol in ctags first and then cscope
 	set csto=0
+	" don't show any error msg before adding cscope db
+	set nocscopeverbose
 	" add any cscope db present in current directory else add from
 	" CSCOPE_DB environment variable.
 	if filereadable("cscope.out")
