@@ -54,6 +54,10 @@ if has("cscope")
 			endif
 
 			exe s:csfkeymap
+
+			let s:csfkeymap2='nnoremap <C-\>'
+			let s:csfkeymap2.=s:csfcmdkey.s:csfopt.' :'.s:csfcmd.' find '.s:csfopt.' '
+			exe s:csfkeymap2
 		endfor
 	endfor
 endif
